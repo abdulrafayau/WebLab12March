@@ -1,37 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Quiz App</title>
-    <link rel="stylesheet" href="style.css">
-    <header class="app-header">
-        <h1>Air University Automated Quiz Analyzer</h1>
-        <p>Test your programming knowledge</p>
-    </header>
-</head>
-<body>
-    <header>
-        <h1>Air University Automated Quiz Analyzer</h1>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air University Automated Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <main>
-        <section id="quiz-container">
-            <h2 id="question">Loading question...</h2>
-            <div id="options"></div>
-            <button id="submitBtn" style="display:none;">Next Question</button>
-        </section>
-    </main>
+  <body>
+    <div class="app-container">
+      <header class="app-header">
+        <div class="logo-area">
+          <div class="logo-circle">AU</div>
+          <h1>Air University Quiz Analyzer</h1>
+        </div>
+        <div class="student-badge">Abdul Rafay • 2502093</div>
+      </header>
 
-    <footer>
-        <div id="score-display">Score: 0</div> 
-        <br><hr>
-        <p>Abdul Rafay - 2502093</p>
-    </footer>
+      <main class="quiz-card">
+        <div class="quiz-card-header">
+          <div class="progress-badge">
+            Question <span id="current-index">1</span> of 5
+          </div>
+          <div class="score-badge">
+            Score: <span id="score-val">0</span> / 5
+          </div>
+        </div>
 
-    <script type="module" src="./app.js"></script>
-</body>
+        <div id="question-box">
+          <h2 id="question-text">Loading your question...</h2>
+        </div>
+
+        <div id="options-list"></div>
+
+        <div class="action-area">
+          <button id="next-btn" disabled>Submit Answer</button>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
 </html>
-
-
-https://github.com/abdulrafayau/WebLab12March.git
