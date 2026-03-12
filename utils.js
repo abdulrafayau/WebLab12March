@@ -2,14 +2,14 @@ export const quizData = [
   {
     id: 1,
     question: "What is the input extraction operator in C++?",
-    options: [ ">>","<<", "::", "->"],
-    answer: 0,
+    options: ["<<", ">>", "::", "->"],
+    answer: 1,
   },
   {
     id: 2,
     question: "Which keyword declares a block-scoped variable in JavaScript?",
-    options: [ "def", "var", "let","int"],
-    answer: 2,
+    options: ["var", "let", "def", "int"],
+    answer: 1,
   },
   {
     id: 3,
@@ -25,20 +25,9 @@ export const quizData = [
   {
     id: 4,
     question: "Which logic gate outputs 1 only if all inputs are 1?",
-    options: ["OR gate", "XOR gate", "AND gate", "NOT gate"],
-    answer: 2,
-  },
-  {
-    id: 4,
-    question: "What is an IIFE in JavaScript?",
-    options: [
-      "Internal Integrated Function Entity",
-      "Immediately Invoked Function Expression",
-      "Initial Instance Flow Execution",
-      "Interactive Interface For Emails",
-    ],
+    options: ["OR gate", "AND gate", "XOR gate", "NOT gate"],
     answer: 1,
-  },
+  }
 ];
 
 export const fetchData = async () => new Promise(res => setTimeout(() => res(quizData), 300));
