@@ -23,7 +23,6 @@ body {
   gap: 24px;
 }
 
-/* Header Styles */
 .app-header {
   display: flex;
   justify-content: space-between;
@@ -224,7 +223,6 @@ body {
   transform: none;
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
   .app-header {
     flex-direction: column;
